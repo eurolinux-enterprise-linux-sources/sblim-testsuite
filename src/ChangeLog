@@ -1,0 +1,477 @@
+2009-06-18  Tyrel Datwyler <tyreld@us.ibm.com>
+
+	* COPYING, Makefile.am, NEWS, associator.pm, autoconfiscate.sh,
+	  cimom.pm, consistence.pl, consistence.pm, instance.pm,
+	  interface.pl, run.sh, sblim-testsuite.spec.in:
+
+	Fixed 2795176: migrate provider licenses to EPL
+
+2008-04-20  Tyrel Datwyler <tyreld@us.ibm.com>
+
+	* associator.pm:
+
+	[ 1944950 ] sblim-testsuite: Association call's syntax not sufficient
+
+2007-07-11  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* ChangeLog, NEWS, interface.pl:
+
+	[1742263] New modifyInst attribute is not recognized in assoc test - fixed
+
+2007-06-21  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* ChangeLog, NEWS, consistence.pm:
+
+	[1733106] fixed recognition of arrays in consistency's property test
+
+2007-02-14  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* NEWS:
+
+	updates for release level 1.2.5
+
+2007-02-14  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* ChangeLog, NEWS, configure.ac:
+
+	updates for release level 1.2.5
+
+2007-02-13  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* ChangeLog, NEWS, consistence.pm:
+
+	[1658747] fixed consistence test results for associations
+
+2006-11-01  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* instance.pm, interface.pl, cim/SampleAssociation.cim,
+	  cim/SampleClass.cim:
+
+	enabled modifyInstance (setInstance) support for Interface Tests
+
+2005-10-28  Viktor Mihajlovski <mihajlov@de.ibm.com>
+
+	* ChangeLog, NEWS, README, associator.pm, cimom.pm, configure.ac,
+	  consistence.pm, instance.pm, run.sh, sblim-testsuite.spec.in:
+
+	Bug 1340687: Support for https connections added.
+
+2005-07-28  Viktor Mihajlovski <mihajlov@de.ibm.com>
+
+	* AUTHORS, COPYING, ChangeLog, NEWS, associator.pm, cimom.pm,
+	  configure.ac, consistence.pm, instance.pm,
+	  sblim-testsuite.spec.in:
+
+	Bugs fixed: 1236584.
+	Enhancements in RPM Build Process.
+
+2005-06-14  Adrian Schuur
+
+	* associator.pm, consistence.pm, instance.pm, run.sh:
+
+	Added -verbose parameter support - -verbose causes actual wbemcli commands to be written to console prior to execution.
+
+2005-05-31  Viktor Mihajlovski <mihajlov@de.ibm.com>
+
+	* ChangeLog, NEWS, configure.ac:
+
+	Added change control information.
+
+2005-05-09  Gareth Bestor <bestor@us.ibm.com>
+
+	* Makefile.am:
+
+	http://sourceforge.net/tracker/index.php?func=detail&aid=1187586&group_id=128809&atid=712784
+
+2005-04-14  Viktor Mihajlovski <mihajlov@de.ibm.com>
+
+	* AUTHORS, COPYING, ChangeLog, Makefile.am, NEWS,
+	  autoconfiscate.sh, configure.ac, license.html, makefile,
+	  sblim-testsuite.spec.in:
+
+	Bug 1179465: Simple autoconfiscation.
+	The test suite is installed to /usr/share/sblim-testsuite
+	and /var/lib/sblim-testsuite.
+
+2004-06-21  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* README, cimom.pm, run.sh:
+
+	enhanced run.sh to accept dynamic configuration for hostname, port and
+	namespace
+
+2004-06-21  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, consistence.pm, interface.pl:
+
+	fixed parsing error at association interface test; enhanced reporting for
+	consistence test on associations
+
+2004-06-03  Gareth Bestor <bestor@us.ibm.com>
+
+	* consistence.pm:
+
+	fix for https://bugzilla.linux.ibm.com/show_bug.cgi?id=8804
+
+2004-06-03  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	parsing issues with shell metacharacters *, ?, +, {, } ...
+
+2004-06-02  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed parsing error on strings in instance test
+
+2004-06-01  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed parsing error within consistence test - struggled with whitespaces
+	contained in property values
+
+2004-05-27  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	instance level test failed when comparing an uppercase word with the
+	lowercase version - does no longer fail now
+
+2004-05-27  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed parse error to find instance in system file on instance level test;
+	enhanced documentation for comparision of counted instances
+
+2004-05-26  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm:
+
+	fixed bug in reporting counted instances for associations
+
+2004-05-18  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, consistence.pm:
+
+	fixed parsing errors for the case of uni-directional associations
+
+2004-05-17  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* run.sh:
+
+	test suite takes care of user set SBLIM_TESTSUITE_ACCESS environment variable
+
+2004-05-04  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm:
+
+	fixed reporting issue for associator/associatorNames in consistence test;
+	seemed to perform only left-hand-to-right-hand tests -> bug in reporting
+
+2004-04-23  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed parsing error to extract key-value pairs
+
+2004-04-19  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* cimom.pm, run.sh, stat/.DONT_DELETE:
+
+	fixed wrong interpretation of WBEMCLI_IND environment variable
+
+2004-04-13  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* cimom.pm, interface.pl, run.sh:
+
+	added -u (userId) and -p (password) option to run.sh script; testsuite takes
+	care of WBEMCLI_IND environment variable now
+
+2004-03-30  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed bug in parsing algorithm for string values containing back slashes
+
+2004-03-29  Gareth Bestor <bestor@us.ibm.com>
+
+	* makefile:
+
+	[no log message]
+
+2004-03-29  Gareth Bestor <bestor@us.ibm.com>
+
+	* makefile:
+
+	[no log message]
+
+2004-03-29  Gareth Bestor <bestor@us.ibm.com>
+
+	* makefile:
+
+	Initial revision
+
+2004-03-29  Gareth Bestor <bestor@us.ibm.com>
+
+	* cimom.pm, README, associator.pm, consistence.pl, consistence.pm,
+	  instance.pm, interface.pl, license.html, makefile, run.sh,
+	  cim/SampleClass.cim, system/linux/SampleClass.system,
+	  system/linux/createKeyFiles.sh.sample:
+
+	[no log message]
+
+2004-03-29  Gareth Bestor <bestor@us.ibm.com>
+
+	* associator.pm, consistence.pl, consistence.pm, instance.pm,
+	  run.sh:
+
+	bug fixes
+
+2004-03-29  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed bug in parsing algorithm for string values containing back slashes
+
+2004-03-01  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* run.sh:
+
+	verbose output is default now
+
+2004-02-20  Viktor Mihajlovski <mihajlov@de.ibm.com>
+
+	* consistence.pl, consistence.pm:
+
+	Fixed grep support.
+
+2003-12-04  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* run.sh:
+
+	fixed exiting the calling shell when CIMOM is not running
+
+2003-11-04  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* README, associator.pm, consistence.pl, consistence.pm,
+	  instance.pm, interface.pl, run.sh:
+
+	enhanced usage for end user : verbose out put and help message for interface
+	and consistence test scripts available now
+
+2003-11-04  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, consistence.pm:
+
+	fixed handling when zero instances are returned
+	CV: ---------------------------------------------------------------------
+
+2003-10-20  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm, run.sh:
+
+	fixed bug in counting returned instances
+
+2003-09-23  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* README:
+
+	description how to use global variable added
+
+2003-09-23  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	fixed bug in setting of global environment variable SBLIM_TESTSUITE_RUN
+
+2003-09-23  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, consistence.pm, instance.pm, interface.pl,
+	  run.sh:
+
+	run.sh sets environment variable SBLIM_TESTSUITE_RUN to -1, if a test
+	failed
+
+2003-09-15  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, cimom.pm, consistence.pl, consistence.pm,
+	  instance.pm, interface.pl, run.sh:
+
+	updated Copyright statement
+
+2003-08-19  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, cimom.pm, consistence.pm, interface.pl, run.sh:
+
+	bug fixing
+
+2003-07-23  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* README:
+
+	added README and Sample files to configure the Test Suite
+
+2003-07-23  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, cimom.pm, consistence.pm, instance.pm,
+	  cim/SampleClass.cim, system/linux/SampleClass.system,
+	  system/linux/createKeyFiles.sh.sample:
+
+	defined common variable for expected Error Prefix
+
+2003-05-20  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* instance.pm:
+
+	fixed test to check the returned exception for create
+
+2003-05-15  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm:
+
+	output of association test distinguishes now between failed and warning
+
+2003-05-15  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, consistence.pm, instance.pm:
+
+	enhanced consistence test to support association; fixed minor bugs in
+	checking returned exceptions
+
+2003-05-13  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, consistence.pm:
+
+	enhanced consistence test on class level; changed syntax of input files
+	reflected in code now
+
+2003-05-12  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, instance.pm:
+
+	fixed bugs, which dependend on changes in the wbemcli syntax
+
+2003-05-12  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, interface.pl, test-cmpi-base.sh,
+	  test-cmpi-fsvol.sh, test-cmpi-network.sh,
+	  cim/Linux_BootOSFromFS.cim, cim/Linux_CSNetworkPort.cim,
+	  cim/Linux_CSProcessor.cim, cim/Linux_ComputerSystem.cim,
+	  cim/Linux_EthernetPort.cim, cim/Linux_Ext2FileSystem.cim,
+	  cim/Linux_Ext3FileSystem.cim, cim/Linux_HostedFileSystem.cim,
+	  cim/Linux_IPProtocolEndpoint.cim,
+	  cim/Linux_LocalLoopbackPort.cim, cim/Linux_NFS.cim,
+	  cim/Linux_NetworkPortImplementsIPEndpoint.cim,
+	  cim/Linux_OSProcess.cim, cim/Linux_OperatingSystem.cim,
+	  cim/Linux_Processor.cim, cim/Linux_ReiserFileSystem.cim,
+	  cim/Linux_RunningOS.cim, cim/Linux_TokenRingPort.cim,
+	  cim/Linux_UnixProcess.cim,
+	  system/linux/Linux_ComputerSystem.system,
+	  system/linux/Linux_EthernetPort.system,
+	  system/linux/Linux_OperatingSystem.system,
+	  system/linux/Linux_UnixProcess.sh,
+	  system/linux/Linux_UnixProcess.system,
+	  system/linux/createKeyFiles.sh:
+
+	moved the input files to the cmpi-... packagesthey belong to
+
+2003-05-07  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, consistence.pm, interface.pl, run.sh,
+	  system/linux/Linux_ComputerSystem.system,
+	  system/linux/Linux_OperatingSystem.system,
+	  system/linux/Linux_UnixProcess.sh,
+	  system/linux/Linux_UnixProcess.system:
+
+	enhanced consistence test to support testing on instance level
+
+2003-04-29  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* instance.pm:
+
+	fixed typo
+
+2003-04-28  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pl, consistence.pm, instance.pm, interface.pl,
+	  run.sh, test-cmpi-base.sh, test-cmpi-fsvol.sh,
+	  test-cmpi-network.sh:
+
+	check_returnedException supports now each interface operation; summary on
+	command console after each test type added
+
+2003-04-24  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, cimom.pm, consistence.pl, consistence.pm,
+	  instance.pm, interface.pl, run.sh, test-cmpi-base.sh,
+	  test-cmpi-fsvol.sh, test-cmpi-network.sh,
+	  system/linux/Linux_ComputerSystem.system,
+	  system/linux/Linux_EthernetPort.system:
+
+	enhanced consistence scripts; support equal, lt, gt, reading from file
+	and executing commands
+
+2003-04-22  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* consistence.pm, system/linux/Linux_ComputerSystem.system,
+	  system/linux/Linux_EthernetPort.system,
+	  system/linux/createKeyFiles.sh:
+
+	consistence test for EthernetPort
+
+2003-04-22  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, cimom.pm, consistence.pl, consistence.pm,
+	  instance.pm, interface.pl,
+	  system/linux/Linux_ComputerSystem.system,
+	  system/linux/createKeyFiles.sh:
+
+	constistence test support started
+
+2003-04-09  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* license.html:
+
+	version 1.0
+
+2003-04-09  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, instance.pm, interface.pl, run.sh,
+	  test-cmpi-base.sh, test-cmpi-fsvol.sh, test-cmpi-network.sh,
+	  cim/Linux_BootOSFromFS.cim, cim/Linux_CSNetworkPort.cim,
+	  cim/Linux_CSProcessor.cim, cim/Linux_ComputerSystem.cim,
+	  cim/Linux_EthernetPort.cim, cim/Linux_Ext2FileSystem.cim,
+	  cim/Linux_Ext3FileSystem.cim, cim/Linux_HostedFileSystem.cim,
+	  cim/Linux_IPProtocolEndpoint.cim,
+	  cim/Linux_LocalLoopbackPort.cim, cim/Linux_NFS.cim,
+	  cim/Linux_NetworkPortImplementsIPEndpoint.cim,
+	  cim/Linux_OSProcess.cim, cim/Linux_OperatingSystem.cim,
+	  cim/Linux_Processor.cim, cim/Linux_ReiserFileSystem.cim,
+	  cim/Linux_RunningOS.cim, cim/Linux_TokenRingPort.cim,
+	  cim/Linux_UnixProcess.cim:
+
+	Initial revision
+
+2003-04-09  Heidi Eckhart <heidineu@de.ibm.com>
+
+	* associator.pm, instance.pm, interface.pl, run.sh,
+	  test-cmpi-base.sh, test-cmpi-fsvol.sh, test-cmpi-network.sh,
+	  cim/Linux_BootOSFromFS.cim, cim/Linux_CSNetworkPort.cim,
+	  cim/Linux_CSProcessor.cim, cim/Linux_ComputerSystem.cim,
+	  cim/Linux_EthernetPort.cim, cim/Linux_Ext2FileSystem.cim,
+	  cim/Linux_Ext3FileSystem.cim, cim/Linux_HostedFileSystem.cim,
+	  cim/Linux_IPProtocolEndpoint.cim,
+	  cim/Linux_LocalLoopbackPort.cim, cim/Linux_NFS.cim,
+	  cim/Linux_NetworkPortImplementsIPEndpoint.cim,
+	  cim/Linux_OSProcess.cim, cim/Linux_OperatingSystem.cim,
+	  cim/Linux_Processor.cim, cim/Linux_ReiserFileSystem.cim,
+	  cim/Linux_RunningOS.cim, cim/Linux_TokenRingPort.cim,
+	  cim/Linux_UnixProcess.cim:
+
+	first code drop of SBLIM Test Suite; intention of the test suite is to
+	offer a an easy entensible framework for automated testing of CIM
+	Instumentation (aka providers)
+

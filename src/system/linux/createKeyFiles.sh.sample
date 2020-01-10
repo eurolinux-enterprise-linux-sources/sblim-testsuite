@@ -1,0 +1,26 @@
+#!/bin/sh
+
+#
+# rename the file to createKeyFiles.sh
+#
+# The intention of this script is to generate commonly used values of
+# properties, like it is the case for the CreationClassName of 
+# CIM_ComputerSystem
+
+#***********************************************************************#
+#                           SampleClass                                 #
+#-----------------------------------------------------------------------#
+
+# CreationClassName
+
+echo 'SampleClass' > SampleClass.keys
+
+# Name
+
+echo `hostname` | grep `dnsdomainname` >/dev/null\
+&& echo `hostname` >> SampleClass.keys \
+|| echo `hostname`'.'`dnsdomainname` >> SampleClass.keys
+
+
+#-----------------------------------------------------------------------#
+

@@ -1,0 +1,19 @@
+********************************************************************************
+class : SampleClass
+
+--------------------------------------------------------------------------------
+SampleClass : -eq 1
+
+--------------------------------------------------------------------------------
+CreationClassName : -eq -file SampleClass.keys[0]
+Name : -eq -file SampleClass.keys[1]
+
+Caption : -set
+Description : -set
+ElementName : -eq -file SampleClass.keys[1]
+
+EnabledState : -eq 2
+OtherEnabledState : -empty
+RequestedState : -eq 2
+EnabledDefault : -eq 2
+Status : -empty

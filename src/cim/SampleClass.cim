@@ -1,0 +1,32 @@
+********************************************************************************
+class : SampleClass
+objectPath : SampleClass.CreationClassName="SampleClass",Name="sample1"
+modifyInst : CreationClassName="SampleClass",Name="sample1",Value=1,2,3
+
+--------------------------------------------------------------------------------
+Instance                                                       enumInstanceNames
+
+--------------------------------------------------------------------------------
+Instance                                                           enumInstances
+
+--------------------------------------------------------------------------------
+Instance                                                                     get
+
+--------------------------------------------------------------------------------
+Instance                                                                     set
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                  modify
+
+--------------------------------------------------------------------------------
+Instance                                                                  create
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                                  delete
+Expected Exception : NOT_SUPPORTED
+
+--------------------------------------------------------------------------------
+Instance                                                               execQuery
+Expected Exception : NOT_SUPPORTED
