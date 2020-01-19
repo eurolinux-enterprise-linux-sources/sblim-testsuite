@@ -2,7 +2,7 @@
 
 Name:           sblim-testsuite
 Version:        1.3.0
-Release:        8%{?dist}
+Release:        7%{?dist}
 Summary:        SBLIM testsuite
 
 Group:          Applications/System
@@ -36,9 +36,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_localstatedir}/lib/%{name}
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.3.0-8
-- Mass rebuild 2013-12-27
-
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.0-7
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
